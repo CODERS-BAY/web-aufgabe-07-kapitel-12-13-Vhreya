@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Willkommen im Zoo!</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Raleway:wght@400;600&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+    <header>
+        <div class="bild">
+            <h1>Welcome</h1><br>
+            <h3>to the</h4>
+            <h2>Jungle</h3>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="info.html">Info</a>
+            <a href="kontakt.html" id="active">Kontakt</a>
+            <a href="preis.html">Preise</a>
+        </nav>
+    </header>
+    <main>
+        <article class="kontakt">
+            <section>
+                <h4>Bitte helfen Sie uns mit Ihrem Feedback!</h4>
+            </section>
+            <form method="POST" action="ausgabe.html">
+                <div class="container">
+                    <div class="part">
+                        <label for="name">Name</label>
+                        <input type="text" name="name">
+                    </div>
+                    <div class="part">
+                        <label for="email">E-Mail</label>
+                        <input type="email" name="email">
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="part">
+                        <label for="date">Besuchstag</label>
+                        <input type="date" name="date">
+                    </div>
+                    <div class="part">
+                        <label for="time">Besuchszeit</label>
+                        <input type="time" name="time">
+                    </div>
+                </div>
+                <div class="part">
+                    <div class="part">
+                        <label for="rating">Wie gut hat es Ihnen gefallen?</label>
+                        <input type="range" name="rating" min="Gar nicht" max="Sehr gut">
+                    </div>
+                    <div class=val>
+                        <div>
+                            <p><sup>Gar nicht</sup></p>
+                        </div>
+                        <div>
+                            <p><sup>Sehr gut</sup></p>
+                        </div>
+                    </div>  
+                </div>
+                <div class="check">
+                    <div>
+                        <label for="recommend">Würden Sie uns weiterempfehlen?</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="recommend" value="Ja" id="Ja" checked>
+                    </div>
+                </div>
+                <div class="part">
+                    <label for="favAnimal">Lieblingstierart</label>
+                    <input list="favAnimals" name="favAnimal" id="favAnimal">
+                    <datalist id="favAnimals">
+                        <option value="Vögel">
+                        <option value="Raubtiere">
+                        <option value="Primaten">
+                        <option value="Fische">
+                        <option value="Beuteltiere">
+                    </datalist>
+                </div>
+                <div class="part">
+                    <label for="customer">Besucherinfo</label>
+                    <select name="customer">
+                        <option value="1">Familienausflug</option>
+                        <option value="2">Gruppenausflug</option>
+                        <option value="3">Ausflug mit Freunden</option>
+                        <option value="4">Allein unterwegs</option>
+                        <option value="5">was anderes</option>
+                    </select>
+                </div>
+                <div class="part">
+                    <label for="comment">Kommentar</label>
+                    <textarea rows="5" cols="15" name="comment"></textarea>
+                </div>
+                <div class="container">
+                    <input type="submit" value="Absenden">
+                    
+                    <input type="reset" value="Reset">
+                </div>
+            </form>
+        </article>
+    </main>
+    <footer>
+        <p>&copy; Vanessa 2020</p>
+    </footer>
+</body>
+</html>
